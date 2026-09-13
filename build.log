@@ -1,0 +1,19 @@
+[0m[1;34m# Ensure build layout[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Preparing build[0m
+[0m[1;34m# Check requirements for android[0m
+[0m[1;30m# Search for Git (git)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/bin/git[0m
+[0m[1;30m# Search for Cython (cython)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/bin/cython[0m
+[0m[1;30m# Search for Java compiler (javac)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/bin/javac[0m
+[0m[1;30m# Search for Java keytool (keytool)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/bin/keytool[0m
+[0m[1;34m# Install platform[0m
+[0m[1;30m# Run 'git config --get remote.origin.url' ...[0m
+[0m[1;30m# Cwd /data/data/com.termux/files/home/ps2usbapp/.buildozer/android/platform/python-for-android[0m
+https://github.com/kivy/python-for-android.git
+[0m[1;30m# Run 'git branch -vv' ...[0m
+[0m[1;30m# Cwd /data/data/com.termux/files/home/ps2usbapp/.buildozer/android/platform/python-for-android[0m
+* master 58d21141 [origin/master] Merge pull request #3321 from kivy/release-2026.05.09
