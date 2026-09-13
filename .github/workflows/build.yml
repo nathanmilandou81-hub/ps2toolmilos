@@ -30,6 +30,13 @@ jobs:
         run: |
           yes | buildozer -v android debug
 
+      - name: Show last log lines on failure
+        if: failure()
+        run: |
+          echo "===== DERNIERES 150 LIGNES DU LOG BUILDOZER ====="
+          tail -n 150 .buildozer/logs/buildozer-*.log 2>/dev/null || echo "Pas de fichier log buildozer trouve"
+          echo "===== FIN DU LOG ====="
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
