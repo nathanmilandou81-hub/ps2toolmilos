@@ -28,13 +28,13 @@ jobs:
 
       - name: Build APK
         run: |
-          yes | buildozer -v android debug
+          yes | buildozer -v android debug 2>&1 | tee build_output.log
 
       - name: Show last log lines on failure
         if: failure()
         run: |
-          echo "===== DERNIERES 150 LIGNES DU LOG BUILDOZER ====="
-          tail -n 150 .buildozer/logs/buildozer-*.log 2>/dev/null || echo "Pas de fichier log buildozer trouve"
+          echo "===== DERNIERES 200 LIGNES ====="
+          tail -n 200 build_output.log
           echo "===== FIN DU LOG ====="
 
       - name: Upload APK
