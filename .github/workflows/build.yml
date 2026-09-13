@@ -26,6 +26,9 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython
 
+      - name: Clean old buildozer cache
+        run: rm -rf .buildozer bin
+
       - name: Build APK
         run: |
           yes | buildozer -v android debug 2>&1 | tee build_output.log
@@ -41,4 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ps2toolmilos-apk
-          path: bin/*.apk
+          path: |
+            bin/*.apk
+            **/bin/*.apk
+          if-no-files-found: warn
