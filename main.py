@@ -142,9 +142,9 @@ class Ps2ToolMilosApp(App):
 
     def download_cover_art(self, game_id, usb_root):
         try:
-            import urllib3
+            import urllib.request
         except ImportError:
-            self.status_label.text = "Module urllib3 non disponible"
+            self.status_label.text = "Module urllib.request non disponible"
             return None
         clean_id = game_id.replace("-", "_").replace(".", "_")
         url = f"https://art.gametdb.com/ps2/cover/EN/{clean_id}.jpg"
@@ -153,14 +153,14 @@ class Ps2ToolMilosApp(App):
             os.makedirs(art_dir)
         dest_path = os.path.join(art_dir, f"{game_id}_COV.jpg")
         try:
-            resp = urllib3.PoolManager().request('GET', url, timeout=15)
-            if resp.status == 200:
-                with open(dest_path, 'wb') as f:
-                    f.write(resp.data)
-                return dest_path
-            else:
-                self.status_label.text = f"Jaquette non trouvee (code {resp.status})"
-                return None
+            with urllib.request.urlopen(url, timeout=15) as resp:
+                if resp.status == 200:
+                    with open(dest_path, 'wb') as f:
+                        f.write(resp.read())
+                    return dest_path
+                else:
+                    self.status_label.text = f"Jaquette non trouvee (code {resp.status})"
+                    return None
         except Exception as e:
             self.status_label.text = f"Erreur telechargement: {str(e)}"
             return None
