@@ -30,7 +30,10 @@ jobs:
         run: rm -rf .buildozer bin
 
       - name: Build APK
+        env:
+          PIP_CONSTRAINT: /home/runner/work/ps2toolmilos/ps2toolmilos/constraints.txt
         run: |
+          echo "charset_normalizer<3.5.1" > constraints.txt
           yes | buildozer -v android debug 2>&1 | tee build_output.log
 
       - name: Show last log lines on failure
