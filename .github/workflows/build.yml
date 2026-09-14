@@ -21,19 +21,11 @@ jobs:
           sudo apt update
           sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
 
-      - name: Install Buildozer and dependencies
+      - name: Install Latest Buildozer (Master)
         run: |
           pip install --upgrade pip
-          pip install Cython==0.29.33 buildozer
-
-      - name: Pre-create Android SDK licenses directory
-        run: |
-          mkdir -p ~/.buildozer/android/platform/android-sdk/licenses
-          echo -e "\n8933bac163af4216b744bb28acb4a1f450f75fd6" > ~/.buildozer/android/platform/android-sdk/licenses/android-sdk-license
-          echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > ~/.buildozer/android/platform/android-sdk/licenses/android-sdk-preview-license
-
-      - name: Clean old buildozer cache
-        run: buildozer android clean || true
+          pip install Cython==0.29.33
+          pip install git+https://github.com/kivy/buildozer.git@master
 
       - name: Build APK
         run: buildozer -v android debug
