@@ -1,0 +1,74 @@
+﻿2026-09-14T04:47:46.2206387Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T04:47:46.2211614Z ##[group]Run actions/checkout@v4
+2026-09-14T04:47:46.2211978Z with:
+2026-09-14T04:47:46.2212255Z   repository: nathanmilandou81-hub/ps2toolmilos
+2026-09-14T04:47:46.2214477Z   token: ***
+2026-09-14T04:47:46.2214713Z   ssh-strict: true
+2026-09-14T04:47:46.2214958Z   ssh-user: git
+2026-09-14T04:47:46.2215206Z   persist-credentials: true
+2026-09-14T04:47:46.2215478Z   clean: true
+2026-09-14T04:47:46.2215728Z   sparse-checkout-cone-mode: true
+2026-09-14T04:47:46.2216016Z   fetch-depth: 1
+2026-09-14T04:47:46.2216258Z   fetch-tags: false
+2026-09-14T04:47:46.2216519Z   show-progress: true
+2026-09-14T04:47:46.2216767Z   lfs: false
+2026-09-14T04:47:46.2216998Z   submodules: false
+2026-09-14T04:47:46.2217270Z   set-safe-directory: true
+2026-09-14T04:47:46.2217553Z   allow-unsafe-pr-checkout: false
+2026-09-14T04:47:46.2217914Z ##[endgroup]
+2026-09-14T04:47:46.2805536Z Syncing repository: nathanmilandou81-hub/ps2toolmilos
+2026-09-14T04:47:46.2807059Z ##[group]Getting Git version info
+2026-09-14T04:47:46.2807695Z Working directory is '/home/runner/work/ps2toolmilos/ps2toolmilos'
+2026-09-14T04:47:46.2808630Z [command]/usr/bin/git version
+2026-09-14T04:47:46.2812106Z git version 2.55.0
+2026-09-14T04:47:46.2823310Z ##[endgroup]
+2026-09-14T04:47:46.2831676Z Temporarily overriding HOME='/home/runner/work/_temp/04d1eead-86d2-4377-aa1d-d95f7105aa95' before making global git config changes
+2026-09-14T04:47:46.2833029Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-14T04:47:46.2835525Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ps2toolmilos/ps2toolmilos
+2026-09-14T04:47:46.2860105Z Deleting the contents of '/home/runner/work/ps2toolmilos/ps2toolmilos'
+2026-09-14T04:47:46.2862799Z ##[group]Initializing the repository
+2026-09-14T04:47:46.2865240Z [command]/usr/bin/git init /home/runner/work/ps2toolmilos/ps2toolmilos
+2026-09-14T04:47:46.3124927Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-14T04:47:46.3126035Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-14T04:47:46.3127234Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-14T04:47:46.3127636Z hint: call:
+2026-09-14T04:47:46.3127859Z hint:
+2026-09-14T04:47:46.3128269Z hint: 	git config --global init.defaultBranch <name>
+2026-09-14T04:47:46.3128791Z hint:
+2026-09-14T04:47:46.3129276Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-14T04:47:46.3129931Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-14T04:47:46.3130382Z hint:
+2026-09-14T04:47:46.3130616Z hint: 	git branch -m <name>
+2026-09-14T04:47:46.3130886Z hint:
+2026-09-14T04:47:46.3131303Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-14T04:47:46.3131985Z Initialized empty Git repository in /home/runner/work/ps2toolmilos/ps2toolmilos/.git/
+2026-09-14T04:47:46.3140174Z [command]/usr/bin/git remote add origin https://github.com/nathanmilandou81-hub/ps2toolmilos
+2026-09-14T04:47:46.3155869Z ##[endgroup]
+2026-09-14T04:47:46.3156405Z ##[group]Disabling automatic garbage collection
+2026-09-14T04:47:46.3158956Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-14T04:47:46.3175750Z ##[endgroup]
+2026-09-14T04:47:46.3176353Z ##[group]Setting up auth
+2026-09-14T04:47:46.3180554Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-14T04:47:46.3200378Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-14T04:47:46.3359406Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-14T04:47:46.3375071Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-14T04:47:46.3472604Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-14T04:47:46.3488048Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-14T04:47:46.3585064Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-14T04:47:46.3602046Z ##[endgroup]
+2026-09-14T04:47:46.3602491Z ##[group]Fetching the repository
+2026-09-14T04:47:46.3607637Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5d71bcb6c935d0d3020d17264ce4cf09c21af291:refs/remotes/origin/main
+2026-09-14T04:47:46.6254092Z From https://github.com/nathanmilandou81-hub/ps2toolmilos
+2026-09-14T04:47:46.6256194Z  * [new ref]         5d71bcb6c935d0d3020d17264ce4cf09c21af291 -> origin/main
+2026-09-14T04:47:46.6257531Z ##[endgroup]
+2026-09-14T04:47:46.6257986Z ##[group]Determining the checkout info
+2026-09-14T04:47:46.6259284Z ##[endgroup]
+2026-09-14T04:47:46.6262831Z [command]/usr/bin/git sparse-checkout disable
+2026-09-14T04:47:46.6283551Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-14T04:47:46.6297622Z ##[group]Checking out the ref
+2026-09-14T04:47:46.6299673Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-14T04:47:46.6418300Z Switched to a new branch 'main'
+2026-09-14T04:47:46.6418954Z branch 'main' set up to track 'origin/main'.
+2026-09-14T04:47:46.6421677Z ##[endgroup]
+2026-09-14T04:47:46.6440820Z [command]/usr/bin/git log -1 --format=%H
+2026-09-14T04:47:46.6452437Z 5d71bcb6c935d0d3020d17264ce4cf09c21af291

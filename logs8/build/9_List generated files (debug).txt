@@ -1,0 +1,132 @@
+﻿2026-09-14T04:07:45.0148729Z ##[group]Run echo "=== Contenu de bin/ ==="
+2026-09-14T04:07:45.0149085Z [36;1mecho "=== Contenu de bin/ ==="[0m
+2026-09-14T04:07:45.0149441Z [36;1mfind . -name '*.apk' -o -name 'bin' -type d 2>/dev/null[0m
+2026-09-14T04:07:45.0149856Z [36;1mls -la bin/ 2>/dev/null || echo "Pas de dossier bin/"[0m
+2026-09-14T04:07:45.0150239Z [36;1mecho "=== Dernieres 100 lignes du build ==="[0m
+2026-09-14T04:07:45.0150553Z [36;1mtail -n 100 build_output.log[0m
+2026-09-14T04:07:45.0225657Z shell: /usr/bin/bash -e {0}
+2026-09-14T04:07:45.0225917Z env:
+2026-09-14T04:07:45.0226188Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:07:45.0226625Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+2026-09-14T04:07:45.0227043Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:07:45.0227429Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:07:45.0227803Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:07:45.0228239Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+2026-09-14T04:07:45.0228575Z ##[endgroup]
+2026-09-14T04:07:45.0322692Z === Contenu de bin/ ===
+2026-09-14T04:07:45.2894319Z ./bin
+2026-09-14T04:07:45.2895083Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/armeabi-v7a__ndk_target_24/python3/iOS/Resources/bin
+2026-09-14T04:07:45.2896315Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/armeabi-v7a__ndk_target_24/python3/android-build/android-root/bin
+2026-09-14T04:07:45.2897786Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/armeabi-v7a__ndk_target_24/python3/Apple/iOS/Resources/bin
+2026-09-14T04:07:45.2899188Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/iOS/Resources/bin
+2026-09-14T04:07:45.2900543Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/bin
+2026-09-14T04:07:45.2901499Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/Apple/iOS/Resources/bin
+2026-09-14T04:07:45.2902412Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/native-build/root/usr/local/bin
+2026-09-14T04:07:45.2903516Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/iOS/Resources/bin
+2026-09-14T04:07:45.2904364Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Apple/iOS/Resources/bin
+2026-09-14T04:07:45.2905020Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/venv/bin
+2026-09-14T04:07:45.2905698Z ./.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/libjxl/third_party/lcms/bin
+2026-09-14T04:07:45.2918185Z total 8
+2026-09-14T04:07:45.2918515Z drwxr-xr-x 2 runner runner 4096 Sep 14 03:48 .
+2026-09-14T04:07:45.2918863Z drwxr-xr-x 6 runner runner 4096 Sep 14 03:48 ..
+2026-09-14T04:07:45.2920738Z === Dernieres 100 lignes du build ===
+2026-09-14T04:07:45.2939046Z [0m[1;31m#     GITHUB_REPOSITORY_ID = '1368468374'[0m
+2026-09-14T04:07:45.2939885Z [0m[1;31m#     GITHUB_ACTIONS = 'true'[0m
+2026-09-14T04:07:45.2940467Z [0m[1;31m#     USE_BAZEL_FALLBACK_VERSION = 'silent:'[0m
+2026-09-14T04:07:45.2941280Z [0m[1;31m#     ANDROID_NDK_LATEST_HOME = '/usr/local/lib/android/sdk/ndk/29.0.14206865'[0m
+2026-09-14T04:07:45.2942193Z [0m[1;31m#     SYSTEMD_EXEC_PID = '1806'[0m
+2026-09-14T04:07:45.2943056Z [0m[1;31m#     GITHUB_SHA = 'a6c30d62e02ec0eb6af99f9ca45182f040c8ecd2'[0m
+2026-09-14T04:07:45.2943849Z [0m[1;31m#     GITHUB_WORKFLOW_REF = 'nathanmilandou81-hub/ps2toolmilos/.github/workflows/build.yml@refs/heads/main'[0m
+2026-09-14T04:07:45.2944531Z [0m[1;31m#     POWERSHELL_DISTRIBUTION_CHANNEL = 'GitHub-Actions-Linux'[0m
+2026-09-14T04:07:45.2945228Z [0m[1;31m#     RUNNER_ENVIRONMENT = 'github-hosted'[0m
+2026-09-14T04:07:45.2945602Z [0m[1;31m#     DOTNET_MULTILEVEL_LOOKUP = '0'[0m
+2026-09-14T04:07:45.2945985Z [0m[1;31m#     GITHUB_REF = 'refs/heads/main'[0m
+2026-09-14T04:07:45.2946313Z [0m[1;31m#     RUNNER_OS = 'Linux'[0m
+2026-09-14T04:07:45.2946641Z [0m[1;31m#     GITHUB_REF_PROTECTED = 'false'[0m
+2026-09-14T04:07:45.2946967Z [0m[1;31m#     HOME = '/home/runner'[0m
+2026-09-14T04:07:45.2947356Z [0m[1;31m#     GITHUB_API_URL = 'https://api.github.com'[0m
+2026-09-14T04:07:45.2947725Z [0m[1;31m#     LANG = 'C.UTF-8'[0m
+2026-09-14T04:07:45.2948121Z [0m[1;31m#     GOROOT_1_25_X64 = '/opt/hostedtoolcache/go/1.25.14/x64'[0m
+2026-09-14T04:07:45.2948642Z [0m[1;31m#     RUNNER_TRACKING_ID = 'github_6b2ffadd-4bfb-4b9b-b4f1-4afeafc737a8'[0m
+2026-09-14T04:07:45.2949074Z [0m[1;31m#     RUNNER_ARCH = 'X64'[0m
+2026-09-14T04:07:45.2949427Z [0m[1;31m#     RUNNER_TEMP = '/home/runner/work/_temp'[0m
+2026-09-14T04:07:45.2950083Z [0m[1;31m#     GITHUB_STATE = '/home/runner/work/_temp/_runner_file_commands/save_state_0d955455-0945-45d8-a369-62a09c8bfddf'[0m
+2026-09-14T04:07:45.2950800Z [0m[1;31m#     EDGEWEBDRIVER = '/usr/local/share/edge_driver'[0m
+2026-09-14T04:07:45.2951265Z [0m[1;31m#     JAVA_HOME_21_X64 = '/usr/lib/jvm/temurin-21-jdk-amd64'[0m
+2026-09-14T04:07:45.2951911Z [0m[1;31m#     GITHUB_ENV = '/home/runner/work/_temp/_runner_file_commands/set_env_0d955455-0945-45d8-a369-62a09c8bfddf'[0m
+2026-09-14T04:07:45.2952595Z [0m[1;31m#     GITHUB_EVENT_PATH = '/home/runner/work/_temp/_github_workflow/event.json'[0m
+2026-09-14T04:07:45.2953353Z [0m[1;31m#     INVOCATION_ID = '1bf6002fb1d94f50ae66f8084486aa68'[0m
+2026-09-14T04:07:45.2953762Z [0m[1;31m#     GITHUB_EVENT_NAME = 'push'[0m
+2026-09-14T04:07:45.2954110Z [0m[1;31m#     GITHUB_RUN_ID = '34803840701'[0m
+2026-09-14T04:07:45.2954532Z [0m[1;31m#     JAVA_HOME_17_X64 = '/usr/lib/jvm/temurin-17-jdk-amd64'[0m
+2026-09-14T04:07:45.2955067Z [0m[1;31m#     ANDROID_NDK_HOME = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+2026-09-14T04:07:45.2955821Z [0m[1;31m#     GITHUB_STEP_SUMMARY = '/home/runner/work/_temp/_runner_file_commands/step_summary_0d955455-0945-45d8-a369-62a09c8bfddf'[0m
+2026-09-14T04:07:45.2956457Z [0m[1;31m#     HOMEBREW_NO_AUTO_UPDATE = '1'[0m
+2026-09-14T04:07:45.2956838Z [0m[1;31m#     GITHUB_ACTOR = 'nathanmilandou81-hub'[0m
+2026-09-14T04:07:45.2957198Z [0m[1;31m#     NVM_DIR = '/home/runner/.nvm'[0m
+2026-09-14T04:07:45.2957517Z [0m[1;31m#     SGX_AESM_ADDR = '1'[0m
+2026-09-14T04:07:45.2957835Z [0m[1;31m#     GITHUB_RUN_ATTEMPT = '1'[0m
+2026-09-14T04:07:45.2958212Z [0m[1;31m#     ANDROID_HOME = '/usr/local/lib/android/sdk'[0m
+2026-09-14T04:07:45.2958666Z [0m[1;31m#     GITHUB_GRAPHQL_URL = 'https://api.github.com/graphql'[0m
+2026-09-14T04:07:45.2959059Z [0m[1;31m#     ACCEPT_EULA = 'Y'[0m
+2026-09-14T04:07:45.2959347Z [0m[1;31m#     USER = 'runner'[0m
+2026-09-14T04:07:45.2960101Z [0m[1;31m#     PSModulePath = '/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/7/Modules:/usr/share/az_15.6.1'[0m
+2026-09-14T04:07:45.2960857Z [0m[1;31m#     GITHUB_SERVER_URL = 'https://github.com'[0m
+2026-09-14T04:07:45.2961368Z [0m[1;31m#     PIPX_HOME = '/opt/pipx'[0m
+2026-09-14T04:07:45.2961753Z [0m[1;31m#     GECKOWEBDRIVER = '/usr/local/share/gecko_driver'[0m
+2026-09-14T04:07:45.2962242Z [0m[1;31m#     CHROMEWEBDRIVER = '/usr/local/share/chromedriver-linux64'[0m
+2026-09-14T04:07:45.2962654Z [0m[1;31m#     SHLVL = '0'[0m
+2026-09-14T04:07:45.2963291Z [0m[1;31m#     ANDROID_SDK_ROOT = '/usr/local/lib/android/sdk'[0m
+2026-09-14T04:07:45.2963743Z [0m[1;31m#     VCPKG_INSTALLATION_ROOT = '/usr/local/share/vcpkg'[0m
+2026-09-14T04:07:45.2964134Z [0m[1;31m#     GITHUB_ACTOR_ID = '324908453'[0m
+2026-09-14T04:07:45.2964644Z [0m[1;31m#     ACTIONS_ORCHESTRATION_ID = '05518649-4b2e-474d-9b7a-7d3ad7950207.build.__default'[0m
+2026-09-14T04:07:45.2965172Z [0m[1;31m#     RUNNER_TOOL_CACHE = '/opt/hostedtoolcache'[0m
+2026-09-14T04:07:45.2965724Z [0m[1;31m#     ImageVersion = '20260907.292.1'[0m
+2026-09-14T04:07:45.2966162Z [0m[1;31m#     Python3_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+2026-09-14T04:07:45.2966581Z [0m[1;31m#     DOTNET_NOLOGO = '1'[0m
+2026-09-14T04:07:45.2967190Z [0m[1;31m#     GITHUB_ARTIFACTS = '/home/runner/work/_temp/_runner_file_commands/artifacts_0d955455-0945-45d8-a369-62a09c8bfddf'[0m
+2026-09-14T04:07:45.2967883Z [0m[1;31m#     GITHUB_WORKFLOW_SHA = 'a6c30d62e02ec0eb6af99f9ca45182f040c8ecd2'[0m
+2026-09-14T04:07:45.2968385Z [0m[1;31m#     GOROOT_1_24_X64 = '/opt/hostedtoolcache/go/1.24.13/x64'[0m
+2026-09-14T04:07:45.2968767Z [0m[1;31m#     GITHUB_REF_NAME = 'main'[0m
+2026-09-14T04:07:45.2969087Z [0m[1;31m#     GITHUB_JOB = 'build'[0m
+2026-09-14T04:07:45.2969502Z [0m[1;31m#     LD_LIBRARY_PATH = '/opt/hostedtoolcache/Python/3.11.16/x64/lib'[0m
+2026-09-14T04:07:45.2969944Z [0m[1;31m#     XDG_RUNTIME_DIR = '/run/user/1001'[0m
+2026-09-14T04:07:45.2970355Z [0m[1;31m#     AZURE_EXTENSION_DIR = '/opt/az/azcliextensions'[0m
+2026-09-14T04:07:45.2970797Z [0m[1;31m#     GOROOT_1_26_X64 = '/opt/hostedtoolcache/go/1.26.8/x64'[0m
+2026-09-14T04:07:45.2971361Z [0m[1;31m#     GITHUB_REPOSITORY = 'nathanmilandou81-hub/ps2toolmilos'[0m
+2026-09-14T04:07:45.2971860Z [0m[1;31m#     Python2_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+2026-09-14T04:07:45.2972372Z [0m[1;31m#     ANDROID_NDK_ROOT = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+2026-09-14T04:07:45.2972987Z [0m[1;31m#     CHROME_BIN = '/usr/bin/google-chrome'[0m
+2026-09-14T04:07:45.2973352Z [0m[1;31m#     GITHUB_RETENTION_DAYS = '90'[0m
+2026-09-14T04:07:45.2973684Z [0m[1;31m#     JOURNAL_STREAM = '8:8044'[0m
+2026-09-14T04:07:45.2974082Z [0m[1;31m#     RUNNER_WORKSPACE = '/home/runner/work/ps2toolmilos'[0m
+2026-09-14T04:07:45.2974489Z [0m[1;31m#     LEIN_HOME = '/usr/local/lib/lein'[0m
+2026-09-14T04:07:45.2975001Z [0m[1;31m#     LEIN_JAR = '/usr/local/lib/lein/self-installs/leiningen-2.12.0-standalone.jar'[0m
+2026-09-14T04:07:45.2975483Z [0m[1;31m#     GITHUB_ACTION_REPOSITORY = ''[0m
+2026-09-14T04:07:45.2975826Z [0m[1;31m#     HCA_CLOUD_PROVIDER = 'azure'[0m
+2026-09-14T04:07:45.2977558Z [0m[1;31m#     PATH = '/home/runner/.buildozer/android/platform/apache-ant-1.9.4/bin:/opt/hostedtoolcache/Python/3.11.16/x64/bin:/opt/hostedtoolcache/Python/3.11.16/x64:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'[0m
+2026-09-14T04:07:45.2979050Z [0m[1;31m#     GITHUB_BASE_REF = ''[0m
+2026-09-14T04:07:45.2979403Z [0m[1;31m#     GHCUP_INSTALL_BASE_PREFIX = '/usr/local'[0m
+2026-09-14T04:07:45.2979741Z [0m[1;31m#     CI = 'true'[0m
+2026-09-14T04:07:45.2980069Z [0m[1;31m#     SWIFT_PATH = '/usr/share/swift/usr/bin'[0m
+2026-09-14T04:07:45.2980416Z [0m[1;31m#     ImageOS = 'ubuntu22'[0m
+2026-09-14T04:07:45.2980787Z [0m[1;31m#     GITHUB_REPOSITORY_OWNER = 'nathanmilandou81-hub'[0m
+2026-09-14T04:07:45.2981152Z [0m[1;31m#     GITHUB_HEAD_REF = ''[0m
+2026-09-14T04:07:45.2981550Z [0m[1;31m#     GITHUB_ACTION_REF = ''[0m
+2026-09-14T04:07:45.2981879Z [0m[1;31m#     ENABLE_RUNNER_TRACING = 'true'[0m
+2026-09-14T04:07:45.2982232Z [0m[1;31m#     GITHUB_WORKFLOW = 'Build APK'[0m
+2026-09-14T04:07:45.2982584Z [0m[1;31m#     DEBIAN_FRONTEND = 'noninteractive'[0m
+2026-09-14T04:07:45.2983659Z [0m[1;31m#     GITHUB_OUTPUT = '/home/runner/work/_temp/_runner_file_commands/set_output_0d955455-0945-45d8-a369-62a09c8bfddf'[0m
+2026-09-14T04:07:45.2984594Z [0m[1;31m#     AGENT_TOOLSDIRECTORY = '/opt/hostedtoolcache'[0m
+2026-09-14T04:07:45.2985067Z [0m[1;31m#     _ = '/opt/hostedtoolcache/Python/3.11.16/x64/bin/buildozer'[0m
+2026-09-14T04:07:45.2985569Z [0m[1;31m#     PACKAGES_PATH = '/home/runner/.buildozer/android/packages'[0m
+2026-09-14T04:07:45.2986283Z [0m[1;31m#     ANDROIDSDK = '/home/runner/.buildozer/android/platform/android-sdk'[0m
+2026-09-14T04:07:45.2986878Z [0m[1;31m#     ANDROIDNDK = '/home/runner/.buildozer/android/platform/android-ndk-r28c'[0m
+2026-09-14T04:07:45.2987339Z [0m[1;31m#     ANDROIDAPI = '33'[0m
+2026-09-14T04:07:45.2987639Z [0m[1;31m#     ANDROIDMINAPI = '24'[0m
+2026-09-14T04:07:45.2987913Z [0m[1;31m# [0m
+2026-09-14T04:07:45.2988218Z [0m[1;31m# Buildozer failed to execute the last command[0m
+2026-09-14T04:07:45.2988645Z [0m[1;31m# The error might be hidden in the log above this error[0m
+2026-09-14T04:07:45.2989089Z [0m[1;31m# Please read the full log, and search for it before[0m
+2026-09-14T04:07:45.2989498Z [0m[1;31m# raising an issue with buildozer itself.[0m
+2026-09-14T04:07:45.2989953Z [0m[1;31m# In case of a bug report, please add a full log with log_level = 2[0m

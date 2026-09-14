@@ -1,0 +1,11 @@
+﻿2026-09-14T03:48:50.8625215Z ##[group]Run rm -rf .buildozer bin
+2026-09-14T03:48:50.8625636Z [36;1mrm -rf .buildozer bin[0m
+2026-09-14T03:48:50.8701092Z shell: /usr/bin/bash -e {0}
+2026-09-14T03:48:50.8701362Z env:
+2026-09-14T03:48:50.8701636Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T03:48:50.8702097Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+2026-09-14T03:48:50.8702516Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T03:48:50.8703086Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T03:48:50.8703472Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T03:48:50.8703840Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+2026-09-14T03:48:50.8704158Z ##[endgroup]

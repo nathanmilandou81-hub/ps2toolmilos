@@ -1,0 +1,60 @@
+[0m[1;34m# Ensure build layout[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Preparing build[0m
+[0m[1;34m# Check requirements for android[0m
+[0m[1;30m# Search for Git (git)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/bin/git[0m
+[0m[1;30m# Search for Cython (cython)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/bin/cython[0m
+[0m[1;30m# Search for Java compiler (javac)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/bin/javac[0m
+[0m[1;30m# Search for Java keytool (keytool)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/bin/keytool[0m
+[0m[1;34m# Install platform[0m
+[0m[1;30m# Run 'git config --get remote.origin.url' ...[0m
+[0m[1;30m# Cwd /data/data/com.termux/files/home/ps2usbapp/.buildozer/android/platform/python-for-android[0m
+https://github.com/kivy/python-for-android.git
+[0m[1;30m# Run 'git branch -vv' ...[0m
+[0m[1;30m# Cwd /data/data/com.termux/files/home/ps2usbapp/.buildozer/android/platform/python-for-android[0m
+* master 58d21141 [origin/master] Merge pull request #3321 from kivy/release-2026.05.09
+  WARNING: The script wheel is installed in '/data/data/com.termux/files/home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script meson is installed in '/data/data/com.termux/files/home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pyproject-build is installed in '/data/data/com.termux/files/home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0m[1;30m# Run '/data/data/com.termux/files/usr/bin/python3.14 -m pip install -q --user appdirs colorama>=0.3.3 jinja2 sh>=2, <3.0; sys_platform!="win32" meson ninja build toml packaging setuptools wheel~=0.43.0' ...[0m
+[0m[1;30m# Cwd None[0m
+[0m[1;34m# Android ANT is missing, downloading[0m
+[0m[1;30m# Downloading https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz[0m
+- Download 18.84%- Download 37.69%- Download 56.53%- Download 75.37%- Download 94.22%- Download 100.00%[0m[1;30m# Extracting apache-ant-1.9.4-bin.tar.gz to /data/data/com.termux/files/home/.buildozer/android/platform/apache-ant-1.9.4[0m
+[0m[1;34m# Apache ANT installation done.[0m
+[0m[1;34m# Android SDK is missing, downloading[0m
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/bin/buildozer", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/scripts/client.py", line 16, in main
+    Buildozer().run_command(sys.argv[1:])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/__init__.py", line 684, in run_command
+    self.target.run_commands(args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/target.py", line 96, in run_commands
+    func(args)
+    ~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/targets/android.py", line 1015, in cmd_debug
+    super().cmd_debug(*args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/target.py", line 106, in cmd_debug
+    self.buildozer.prepare_for_build()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/__init__.py", line 91, in prepare_for_build
+    self.target.install_platform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/targets/android.py", line 654, in install_platform
+    self._install_android_sdk()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/buildozer/targets/android.py", line 402, in _install_android_sdk
+    raise SystemError('Unsupported platform: {0}'.format(platform))
+SystemError: Unsupported platform: android

@@ -1,0 +1,34 @@
+﻿2026-09-14T04:15:31.3849148Z ##[group]Run pip install --upgrade pip
+2026-09-14T04:15:31.3849521Z [36;1mpip install --upgrade pip[0m
+2026-09-14T04:15:31.3849817Z [36;1mpip install buildozer cython[0m
+2026-09-14T04:15:31.3931501Z shell: /usr/bin/bash -e {0}
+2026-09-14T04:15:31.3931784Z env:
+2026-09-14T04:15:31.3932067Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:15:31.3932520Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+2026-09-14T04:15:31.3932941Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:15:31.3933312Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:15:31.3933697Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T04:15:31.3934076Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+2026-09-14T04:15:31.3934394Z ##[endgroup]
+2026-09-14T04:15:32.0968794Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (26.2.1)
+2026-09-14T04:15:32.6694457Z Collecting buildozer
+2026-09-14T04:15:32.7175229Z   Downloading buildozer-1.6.0-py3-none-any.whl.metadata (159 kB)
+2026-09-14T04:15:32.9691429Z Collecting cython
+2026-09-14T04:15:32.9783272Z   Downloading cython-3.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (28 kB)
+2026-09-14T04:15:32.9953406Z Collecting pexpect (from buildozer)
+2026-09-14T04:15:33.0025083Z   Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+2026-09-14T04:15:33.0205419Z Collecting packaging (from buildozer)
+2026-09-14T04:15:33.0278095Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-09-14T04:15:33.0336091Z Collecting cython
+2026-09-14T04:15:33.0407241Z   Downloading Cython-0.29.37-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (3.1 kB)
+2026-09-14T04:15:33.0549374Z Collecting ptyprocess>=0.5 (from pexpect->buildozer)
+2026-09-14T04:15:33.0630335Z   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2026-09-14T04:15:33.0740549Z Downloading buildozer-1.6.0-py3-none-any.whl (92 kB)
+2026-09-14T04:15:33.0930543Z Downloading Cython-0.29.37-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+2026-09-14T04:15:33.1810400Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 23.4 MB/s  0:00:00
+2026-09-14T04:15:33.1891589Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-09-14T04:15:33.2002556Z Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+2026-09-14T04:15:33.2092363Z Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+2026-09-14T04:15:33.2554214Z Installing collected packages: ptyprocess, pexpect, packaging, cython, buildozer
+2026-09-14T04:15:34.0148487Z 
+2026-09-14T04:15:34.0158322Z Successfully installed buildozer-1.6.0 cython-0.29.37 packaging-26.3 pexpect-4.9.0 ptyprocess-0.7.0

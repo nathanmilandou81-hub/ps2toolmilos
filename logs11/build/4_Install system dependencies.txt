@@ -1,0 +1,421 @@
+﻿2026-09-14T05:22:41.3088279Z ##[group]Run sudo apt update
+2026-09-14T05:22:41.3089994Z [36;1msudo apt update[0m
+2026-09-14T05:22:41.3095210Z [36;1msudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev build-essential[0m
+2026-09-14T05:22:41.3850324Z shell: /usr/bin/bash -e {0}
+2026-09-14T05:22:41.3851642Z env:
+2026-09-14T05:22:41.3852658Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T05:22:41.3854364Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+2026-09-14T05:22:41.3856062Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T05:22:41.3857647Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T05:22:41.3859197Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+2026-09-14T05:22:41.3860758Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+2026-09-14T05:22:41.3862201Z ##[endgroup]
+2026-09-14T05:22:41.4149120Z 
+2026-09-14T05:22:41.4150342Z WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2026-09-14T05:22:41.4152167Z 
+2026-09-14T05:22:41.5595901Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-09-14T05:22:41.5772399Z Get:6 https://packages.microsoft.com/ubuntu/22.04/prod jammy InRelease [3632 B]
+2026-09-14T05:22:41.6050352Z Hit:2 http://azure.archive.ubuntu.com/ubuntu jammy InRelease
+2026-09-14T05:22:41.6065757Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+2026-09-14T05:22:41.6095702Z Get:4 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+2026-09-14T05:22:41.6133106Z Get:5 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+2026-09-14T05:22:41.6587908Z Get:7 https://dl.google.com/linux/chrome-stable/deb stable InRelease [2548 B]
+2026-09-14T05:22:41.7274993Z Get:8 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages [746 kB]
+2026-09-14T05:22:41.7425185Z Get:9 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main arm64 Packages [512 kB]
+2026-09-14T05:22:41.9323910Z Get:10 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3795 kB]
+2026-09-14T05:22:41.9574385Z Get:11 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [563 kB]
+2026-09-14T05:22:41.9633667Z Get:12 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [6542 kB]
+2026-09-14T05:22:42.0045341Z Get:13 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [1256 kB]
+2026-09-14T05:22:42.0103010Z Get:14 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1282 kB]
+2026-09-14T05:22:42.0180582Z Get:15 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [323 kB]
+2026-09-14T05:22:42.0209662Z Get:16 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [76.8 kB]
+2026-09-14T05:22:42.0217862Z Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [15.9 kB]
+2026-09-14T05:22:42.1199860Z Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3526 kB]
+2026-09-14T05:22:42.1394895Z Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [495 kB]
+2026-09-14T05:22:42.1832195Z Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [6306 kB]
+2026-09-14T05:22:42.1946274Z Get:26 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1413 B]
+2026-09-14T05:22:42.2155488Z Get:21 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [1211 kB]
+2026-09-14T05:22:42.2217280Z Get:22 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1048 kB]
+2026-09-14T05:22:42.2268679Z Get:23 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe Translation-en [235 kB]
+2026-09-14T05:22:42.2287269Z Get:24 http://azure.archive.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [69.4 kB]
+2026-09-14T05:22:42.2298014Z Get:25 http://azure.archive.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [12.9 kB]
+2026-09-14T05:22:48.0302900Z Fetched 28.4 MB in 3s (8683 kB/s)
+2026-09-14T05:22:49.3239121Z Reading package lists...
+2026-09-14T05:22:49.5776876Z Building dependency tree...
+2026-09-14T05:22:49.5789559Z Reading state information...
+2026-09-14T05:22:49.6009746Z 61 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2026-09-14T05:22:49.6149816Z 
+2026-09-14T05:22:49.6150583Z WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2026-09-14T05:22:49.6151497Z 
+2026-09-14T05:22:49.6573953Z Reading package lists...
+2026-09-14T05:22:49.8880555Z Building dependency tree...
+2026-09-14T05:22:49.8891320Z Reading state information...
+2026-09-14T05:22:50.0589253Z autoconf is already the newest version (2.71-2).
+2026-09-14T05:22:50.0590290Z build-essential is already the newest version (12.9ubuntu3).
+2026-09-14T05:22:50.0591267Z build-essential set to manually installed.
+2026-09-14T05:22:50.0592484Z libffi-dev is already the newest version (3.4.2-4).
+2026-09-14T05:22:50.0593260Z libffi-dev set to manually installed.
+2026-09-14T05:22:50.0594019Z libtool is already the newest version (2.4.6-15build2).
+2026-09-14T05:22:50.0594709Z zip is already the newest version (3.0-12build2).
+2026-09-14T05:22:50.0595365Z libssl-dev is already the newest version (3.0.2-0ubuntu1.29).
+2026-09-14T05:22:50.0596059Z unzip is already the newest version (6.0-26ubuntu3.2).
+2026-09-14T05:22:50.0596772Z zlib1g-dev is already the newest version (1:1.2.11.dfsg-2ubuntu9.2).
+2026-09-14T05:22:50.0598095Z python3-pip is already the newest version (22.0.2+dfsg-1ubuntu0.7).
+2026-09-14T05:22:50.0598941Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+2026-09-14T05:22:50.0599622Z The following additional packages will be installed:
+2026-09-14T05:22:50.0600399Z   ca-certificates-java cmake-data dh-elpa-helper libatk-wrapper-java
+2026-09-14T05:22:50.0601674Z   libatk-wrapper-java-jni libjsoncpp25 libpcsclite1 librhash0 libxcb-shape0
+2026-09-14T05:22:50.0602826Z   libxv1 libxxf86dga1 openjdk-17-jdk-headless openjdk-17-jre
+2026-09-14T05:22:50.0614108Z   openjdk-17-jre-headless x11-utils
+2026-09-14T05:22:50.0615018Z Suggested packages:
+2026-09-14T05:22:50.0615823Z   cmake-doc ninja-build cmake-format pcscd openjdk-17-demo openjdk-17-source
+2026-09-14T05:22:50.0616699Z   visualvm libnss-mdns fonts-ipafont-gothic fonts-ipafont-mincho
+2026-09-14T05:22:50.0617472Z   fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic mesa-utils
+2026-09-14T05:22:50.1655602Z The following packages will be REMOVED:
+2026-09-14T05:22:50.1657392Z   pkgconf r-base-dev
+2026-09-14T05:22:50.1658601Z The following NEW packages will be installed:
+2026-09-14T05:22:50.1659974Z   ca-certificates-java cmake cmake-data dh-elpa-helper libatk-wrapper-java
+2026-09-14T05:22:50.1661930Z   libatk-wrapper-java-jni libjsoncpp25 libncurses5-dev libncursesw5-dev
+2026-09-14T05:22:50.1666206Z   libpcsclite1 librhash0 libtinfo5 libxcb-shape0 libxv1 libxxf86dga1
+2026-09-14T05:22:50.1666980Z   openjdk-17-jdk openjdk-17-jdk-headless openjdk-17-jre
+2026-09-14T05:22:50.1667611Z   openjdk-17-jre-headless pkg-config x11-utils
+2026-09-14T05:22:50.2217234Z 0 upgraded, 21 newly installed, 2 to remove and 61 not upgraded.
+2026-09-14T05:22:50.2826838Z Need to get 130 MB of archives.
+2026-09-14T05:22:50.2827544Z After this operation, 309 MB of additional disk space will be used.
+2026-09-14T05:22:50.2828091Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-09-14T05:22:50.5731331Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 pkg-config amd64 0.29.2-1ubuntu3 [48.2 kB]
+2026-09-14T05:22:50.9915660Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcsclite1 amd64 1.9.5-3ubuntu1 [19.8 kB]
+2026-09-14T05:22:51.1537785Z Get:4 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre-headless amd64 17.0.20+8-1~22.04 [48.4 MB]
+2026-09-14T05:22:54.0756449Z Get:5 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates-java all 20190909ubuntu1.3 [12.3 kB]
+2026-09-14T05:22:54.2118699Z Get:6 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+2026-09-14T05:22:54.3503529Z Get:7 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+2026-09-14T05:22:54.4905748Z Get:8 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7610 B]
+2026-09-14T05:22:54.6266474Z Get:9 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.2 [1913 kB]
+2026-09-14T05:22:54.8440041Z Get:10 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.2 [5010 kB]
+2026-09-14T05:22:55.1926039Z Get:11 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-shape0 amd64 1.14-3ubuntu3 [6158 B]
+2026-09-14T05:22:55.3286543Z Get:12 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libxv1 amd64 2:1.0.11-1build2 [11.2 kB]
+2026-09-14T05:22:55.4646593Z Get:13 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libxxf86dga1 amd64 2:1.1.5-0ubuntu3 [12.6 kB]
+2026-09-14T05:22:55.6006925Z Get:14 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 x11-utils amd64 7.7+5build2 [206 kB]
+2026-09-14T05:22:55.7446493Z Get:15 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java all 0.38.0-5build1 [53.1 kB]
+2026-09-14T05:22:55.8816959Z Get:16 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java-jni amd64 0.38.0-5build1 [49.0 kB]
+2026-09-14T05:22:56.0191264Z Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncurses5-dev amd64 6.3-2ubuntu0.3 [788 B]
+2026-09-14T05:22:56.1552955Z Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncursesw5-dev amd64 6.3-2ubuntu0.3 [792 B]
+2026-09-14T05:22:56.2924499Z Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libtinfo5 amd64 6.3-2ubuntu0.3 [100 kB]
+2026-09-14T05:22:56.4317733Z Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre amd64 17.0.20+8-1~22.04 [238 kB]
+2026-09-14T05:22:56.5768197Z Get:21 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jdk-headless amd64 17.0.20+8-1~22.04 [71.5 MB]
+2026-09-14T05:22:59.8345933Z Get:22 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jdk amd64 17.0.20+8-1~22.04 [1989 kB]
+2026-09-14T05:23:00.2898524Z Fetched 130 MB in 10s (13.4 MB/s)
+2026-09-14T05:23:00.4156818Z (Reading database ... 
+2026-09-14T05:23:00.4157232Z (Reading database ... 5%
+2026-09-14T05:23:00.4157533Z (Reading database ... 10%
+2026-09-14T05:23:00.4158251Z (Reading database ... 15%
+2026-09-14T05:23:00.4158523Z (Reading database ... 20%
+2026-09-14T05:23:00.4158789Z (Reading database ... 25%
+2026-09-14T05:23:00.4159824Z (Reading database ... 30%
+2026-09-14T05:23:00.4160307Z (Reading database ... 35%
+2026-09-14T05:23:00.4160669Z (Reading database ... 40%
+2026-09-14T05:23:00.4161399Z (Reading database ... 45%
+2026-09-14T05:23:00.4161715Z (Reading database ... 50%
+2026-09-14T05:23:00.7236632Z (Reading database ... 55%
+2026-09-14T05:23:01.1590686Z (Reading database ... 60%
+2026-09-14T05:23:01.5478259Z (Reading database ... 65%
+2026-09-14T05:23:01.8500720Z (Reading database ... 70%
+2026-09-14T05:23:02.5740018Z (Reading database ... 75%
+2026-09-14T05:23:03.4999324Z (Reading database ... 80%
+2026-09-14T05:23:04.3828907Z (Reading database ... 85%
+2026-09-14T05:23:05.2977420Z (Reading database ... 90%
+2026-09-14T05:23:06.1551962Z (Reading database ... 95%
+2026-09-14T05:23:06.1552606Z (Reading database ... 100%
+2026-09-14T05:23:06.1553325Z (Reading database ... 262147 files and directories currently installed.)
+2026-09-14T05:23:06.1608624Z Removing r-base-dev (4.6.1-6.2204.0) ...
+2026-09-14T05:23:06.2317896Z dpkg: pkgconf: dependency problems, but removing anyway as you requested:
+2026-09-14T05:23:06.2318457Z  php8.1-dev depends on pkg-config; however:
+2026-09-14T05:23:06.2318808Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2319464Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2319870Z  mono-devel depends on pkg-config; however:
+2026-09-14T05:23:06.2320205Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2320576Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2321378Z  libmagickwand-6.q16-dev:amd64 depends on pkg-config; however:
+2026-09-14T05:23:06.2321792Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2322163Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2322617Z  libmagickcore-6.q16-dev:amd64 depends on pkg-config; however:
+2026-09-14T05:23:06.2323030Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2323389Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2323807Z  libglib2.0-dev:amd64 depends on pkg-config; however:
+2026-09-14T05:23:06.2324163Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2324530Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2324969Z  libfontconfig-dev:amd64 depends on pkg-config; however:
+2026-09-14T05:23:06.2325339Z   Package pkg-config is not installed.
+2026-09-14T05:23:06.2325701Z   Package pkgconf which provides pkg-config is to be removed.
+2026-09-14T05:23:06.2325985Z 
+2026-09-14T05:23:06.2379839Z Removing pkgconf (1.8.0-1) ...
+2026-09-14T05:23:06.3920553Z Removing 'diversion of /usr/bin/pkg-config to /usr/bin/pkg-config.real by pkgconf'
+2026-09-14T05:23:06.4059610Z Removing 'diversion of /usr/share/aclocal/pkg.m4 to /usr/share/aclocal/pkg.real.m4 by pkgconf'
+2026-09-14T05:23:06.4196430Z Removing 'diversion of /usr/share/man/man1/pkg-config.1.gz to /usr/share/man/man1/pkg-config.real.1.gz by pkgconf'
+2026-09-14T05:23:06.4334225Z Removing 'diversion of /usr/share/pkg-config-crosswrapper to /usr/share/pkg-config-crosswrapper.real by pkgconf'
+2026-09-14T05:23:06.5083365Z Selecting previously unselected package pkg-config.
+2026-09-14T05:23:06.5165836Z (Reading database ... 
+2026-09-14T05:23:06.5166252Z (Reading database ... 5%
+2026-09-14T05:23:06.5166636Z (Reading database ... 10%
+2026-09-14T05:23:06.5167053Z (Reading database ... 15%
+2026-09-14T05:23:06.5167472Z (Reading database ... 20%
+2026-09-14T05:23:06.5167959Z (Reading database ... 25%
+2026-09-14T05:23:06.5168390Z (Reading database ... 30%
+2026-09-14T05:23:06.5168795Z (Reading database ... 35%
+2026-09-14T05:23:06.5169195Z (Reading database ... 40%
+2026-09-14T05:23:06.5170229Z (Reading database ... 45%
+2026-09-14T05:23:06.5170669Z (Reading database ... 50%
+2026-09-14T05:23:06.5191024Z (Reading database ... 55%
+2026-09-14T05:23:06.5226142Z (Reading database ... 60%
+2026-09-14T05:23:06.5253068Z (Reading database ... 65%
+2026-09-14T05:23:06.5279353Z (Reading database ... 70%
+2026-09-14T05:23:06.5393648Z (Reading database ... 75%
+2026-09-14T05:23:06.5587959Z (Reading database ... 80%
+2026-09-14T05:23:06.5796059Z (Reading database ... 85%
+2026-09-14T05:23:06.6057165Z (Reading database ... 90%
+2026-09-14T05:23:06.6164725Z (Reading database ... 95%
+2026-09-14T05:23:06.6165301Z (Reading database ... 100%
+2026-09-14T05:23:06.6166153Z (Reading database ... 262125 files and directories currently installed.)
+2026-09-14T05:23:06.6216638Z Preparing to unpack .../00-pkg-config_0.29.2-1ubuntu3_amd64.deb ...
+2026-09-14T05:23:06.6226422Z Unpacking pkg-config (0.29.2-1ubuntu3) ...
+2026-09-14T05:23:06.6557140Z Selecting previously unselected package libpcsclite1:amd64.
+2026-09-14T05:23:06.6760189Z Preparing to unpack .../01-libpcsclite1_1.9.5-3ubuntu1_amd64.deb ...
+2026-09-14T05:23:06.6783723Z Unpacking libpcsclite1:amd64 (1.9.5-3ubuntu1) ...
+2026-09-14T05:23:06.7042069Z Selecting previously unselected package openjdk-17-jre-headless:amd64.
+2026-09-14T05:23:06.7244961Z Preparing to unpack .../02-openjdk-17-jre-headless_17.0.20+8-1~22.04_amd64.deb ...
+2026-09-14T05:23:06.7255463Z Unpacking openjdk-17-jre-headless:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:07.4089504Z Selecting previously unselected package ca-certificates-java.
+2026-09-14T05:23:07.4292091Z Preparing to unpack .../03-ca-certificates-java_20190909ubuntu1.3_all.deb ...
+2026-09-14T05:23:07.4321795Z Unpacking ca-certificates-java (20190909ubuntu1.3) ...
+2026-09-14T05:23:07.4578105Z Selecting previously unselected package libjsoncpp25:amd64.
+2026-09-14T05:23:07.4779048Z Preparing to unpack .../04-libjsoncpp25_1.9.5-3_amd64.deb ...
+2026-09-14T05:23:07.4788535Z Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+2026-09-14T05:23:07.5046975Z Selecting previously unselected package librhash0:amd64.
+2026-09-14T05:23:07.5249028Z Preparing to unpack .../05-librhash0_1.4.2-1ubuntu1_amd64.deb ...
+2026-09-14T05:23:07.5260202Z Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+2026-09-14T05:23:07.5495445Z Selecting previously unselected package dh-elpa-helper.
+2026-09-14T05:23:07.5697505Z Preparing to unpack .../06-dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+2026-09-14T05:23:07.5707050Z Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+2026-09-14T05:23:07.5975898Z Selecting previously unselected package cmake-data.
+2026-09-14T05:23:07.6177499Z Preparing to unpack .../07-cmake-data_3.22.1-1ubuntu1.22.04.2_all.deb ...
+2026-09-14T05:23:07.6340592Z Unpacking cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+2026-09-14T05:23:08.2213756Z Selecting previously unselected package cmake.
+2026-09-14T05:23:08.2434713Z Preparing to unpack .../08-cmake_3.22.1-1ubuntu1.22.04.2_amd64.deb ...
+2026-09-14T05:23:08.2444439Z Unpacking cmake (3.22.1-1ubuntu1.22.04.2) ...
+2026-09-14T05:23:08.3625816Z Selecting previously unselected package libxcb-shape0:amd64.
+2026-09-14T05:23:08.3832719Z Preparing to unpack .../09-libxcb-shape0_1.14-3ubuntu3_amd64.deb ...
+2026-09-14T05:23:08.3841576Z Unpacking libxcb-shape0:amd64 (1.14-3ubuntu3) ...
+2026-09-14T05:23:08.4085872Z Selecting previously unselected package libxv1:amd64.
+2026-09-14T05:23:08.4292076Z Preparing to unpack .../10-libxv1_2%3a1.0.11-1build2_amd64.deb ...
+2026-09-14T05:23:08.4300739Z Unpacking libxv1:amd64 (2:1.0.11-1build2) ...
+2026-09-14T05:23:08.4537329Z Selecting previously unselected package libxxf86dga1:amd64.
+2026-09-14T05:23:08.4740781Z Preparing to unpack .../11-libxxf86dga1_2%3a1.1.5-0ubuntu3_amd64.deb ...
+2026-09-14T05:23:08.4752140Z Unpacking libxxf86dga1:amd64 (2:1.1.5-0ubuntu3) ...
+2026-09-14T05:23:08.5025053Z Selecting previously unselected package x11-utils.
+2026-09-14T05:23:08.5228561Z Preparing to unpack .../12-x11-utils_7.7+5build2_amd64.deb ...
+2026-09-14T05:23:08.5239160Z Unpacking x11-utils (7.7+5build2) ...
+2026-09-14T05:23:08.5655276Z Selecting previously unselected package libatk-wrapper-java.
+2026-09-14T05:23:08.5863817Z Preparing to unpack .../13-libatk-wrapper-java_0.38.0-5build1_all.deb ...
+2026-09-14T05:23:08.5870518Z Unpacking libatk-wrapper-java (0.38.0-5build1) ...
+2026-09-14T05:23:08.6128168Z Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+2026-09-14T05:23:08.6336799Z Preparing to unpack .../14-libatk-wrapper-java-jni_0.38.0-5build1_amd64.deb ...
+2026-09-14T05:23:08.6343349Z Unpacking libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+2026-09-14T05:23:08.6569445Z Selecting previously unselected package libncurses5-dev:amd64.
+2026-09-14T05:23:08.6773763Z Preparing to unpack .../15-libncurses5-dev_6.3-2ubuntu0.3_amd64.deb ...
+2026-09-14T05:23:08.6781384Z Unpacking libncurses5-dev:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:08.6992453Z Selecting previously unselected package libncursesw5-dev:amd64.
+2026-09-14T05:23:08.7202688Z Preparing to unpack .../16-libncursesw5-dev_6.3-2ubuntu0.3_amd64.deb ...
+2026-09-14T05:23:08.7211584Z Unpacking libncursesw5-dev:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:08.7444353Z Selecting previously unselected package libtinfo5:amd64.
+2026-09-14T05:23:08.7661749Z Preparing to unpack .../17-libtinfo5_6.3-2ubuntu0.3_amd64.deb ...
+2026-09-14T05:23:08.7670247Z Unpacking libtinfo5:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:08.7919307Z Selecting previously unselected package openjdk-17-jre:amd64.
+2026-09-14T05:23:08.8127178Z Preparing to unpack .../18-openjdk-17-jre_17.0.20+8-1~22.04_amd64.deb ...
+2026-09-14T05:23:08.8133905Z Unpacking openjdk-17-jre:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:08.8681273Z Selecting previously unselected package openjdk-17-jdk-headless:amd64.
+2026-09-14T05:23:08.8899914Z Preparing to unpack .../19-openjdk-17-jdk-headless_17.0.20+8-1~22.04_amd64.deb ...
+2026-09-14T05:23:08.8943567Z Unpacking openjdk-17-jdk-headless:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:09.1709358Z Selecting previously unselected package openjdk-17-jdk:amd64.
+2026-09-14T05:23:09.1915283Z Preparing to unpack .../20-openjdk-17-jdk_17.0.20+8-1~22.04_amd64.deb ...
+2026-09-14T05:23:09.1923133Z Unpacking openjdk-17-jdk:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:09.2536341Z Setting up libncursesw5-dev:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:09.2559501Z Setting up libxcb-shape0:amd64 (1.14-3ubuntu3) ...
+2026-09-14T05:23:09.2579869Z Setting up libxxf86dga1:amd64 (2:1.1.5-0ubuntu3) ...
+2026-09-14T05:23:09.2598754Z Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+2026-09-14T05:23:09.2618684Z Setting up libxv1:amd64 (2:1.0.11-1build2) ...
+2026-09-14T05:23:09.2639064Z Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+2026-09-14T05:23:09.2724911Z Setting up pkg-config (0.29.2-1ubuntu3) ...
+2026-09-14T05:23:09.3078368Z Setting up libpcsclite1:amd64 (1.9.5-3ubuntu1) ...
+2026-09-14T05:23:09.3098339Z Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+2026-09-14T05:23:09.3120479Z Setting up libncurses5-dev:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:09.3141643Z Setting up x11-utils (7.7+5build2) ...
+2026-09-14T05:23:09.3230794Z Setting up cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+2026-09-14T05:23:09.3887497Z Setting up libatk-wrapper-java (0.38.0-5build1) ...
+2026-09-14T05:23:09.3912472Z Setting up ca-certificates-java (20190909ubuntu1.3) ...
+2026-09-14T05:23:09.4070527Z head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+2026-09-14T05:23:09.6343459Z Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
+2026-09-14T05:23:09.6535594Z Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+2026-09-14T05:23:09.6560153Z Adding debian:TWCA_Root_Certification_Authority.pem
+2026-09-14T05:23:09.6622296Z Adding debian:DigiCert_Global_Root_G2.pem
+2026-09-14T05:23:09.6625326Z Adding debian:Amazon_Root_CA_4.pem
+2026-09-14T05:23:09.6668045Z Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+2026-09-14T05:23:09.6682479Z Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-09-14T05:23:09.6704526Z Adding debian:ssl-cert-snakeoil.pem
+2026-09-14T05:23:09.6735656Z Adding debian:UCA_Extended_Validation_Root.pem
+2026-09-14T05:23:09.6768929Z Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+2026-09-14T05:23:09.6801531Z Adding debian:DigiCert_Assured_ID_Root_G2.pem
+2026-09-14T05:23:09.6834326Z Adding debian:certSIGN_Root_CA_G2.pem
+2026-09-14T05:23:09.6874655Z Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+2026-09-14T05:23:09.6926186Z Adding debian:ePKI_Root_Certification_Authority.pem
+2026-09-14T05:23:09.6954620Z Adding debian:TrustAsia_TLS_ECC_Root_CA.pem
+2026-09-14T05:23:09.7014069Z Adding debian:Izenpe.com.pem
+2026-09-14T05:23:09.7029762Z Adding debian:GTS_Root_R3.pem
+2026-09-14T05:23:09.7069112Z Adding debian:BJCA_Global_Root_CA1.pem
+2026-09-14T05:23:09.7104461Z Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+2026-09-14T05:23:09.7123894Z Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T05:23:09.7147742Z Adding debian:SecureSign_Root_CA12.pem
+2026-09-14T05:23:09.7174782Z Adding debian:USERTrust_ECC_Certification_Authority.pem
+2026-09-14T05:23:09.7203292Z Adding debian:COMODO_ECC_Certification_Authority.pem
+2026-09-14T05:23:09.7234203Z Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+2026-09-14T05:23:09.7263235Z Adding debian:GTS_Root_R1.pem
+2026-09-14T05:23:09.7287588Z Adding debian:emSign_Root_CA_-_C1.pem
+2026-09-14T05:23:09.7324991Z Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+2026-09-14T05:23:09.7334925Z Adding debian:vTrus_ECC_Root_CA.pem
+2026-09-14T05:23:09.7352087Z Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+2026-09-14T05:23:09.7421696Z Adding debian:ACCVRAIZ1.pem
+2026-09-14T05:23:09.7443098Z Adding debian:BJCA_Global_Root_CA2.pem
+2026-09-14T05:23:09.7450626Z Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+2026-09-14T05:23:09.7501656Z Adding debian:Buypass_Class_3_Root_CA.pem
+2026-09-14T05:23:09.7522116Z Adding debian:ISRG_Root_X1.pem
+2026-09-14T05:23:09.7554227Z Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+2026-09-14T05:23:09.7606311Z Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+2026-09-14T05:23:09.7623888Z Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+2026-09-14T05:23:09.7625444Z Adding debian:emSign_ECC_Root_CA_-_G3.pem
+2026-09-14T05:23:09.7644653Z Adding debian:emSign_ECC_Root_CA_-_C3.pem
+2026-09-14T05:23:09.7678297Z Adding debian:Certum_Trusted_Network_CA_2.pem
+2026-09-14T05:23:09.7715613Z Adding debian:COMODO_RSA_Certification_Authority.pem
+2026-09-14T05:23:09.7749239Z Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+2026-09-14T05:23:09.7772118Z Adding debian:DigiCert_Trusted_Root_G4.pem
+2026-09-14T05:23:09.7805787Z Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+2026-09-14T05:23:09.7839638Z Adding debian:ANF_Secure_Server_Root_CA.pem
+2026-09-14T05:23:09.7874002Z Adding debian:QuoVadis_Root_CA_3_G3.pem
+2026-09-14T05:23:09.7906570Z Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+2026-09-14T05:23:09.7919284Z Adding debian:emSign_Root_CA_-_G1.pem
+2026-09-14T05:23:09.7963108Z Adding debian:Hongkong_Post_Root_CA_3.pem
+2026-09-14T05:23:09.7977064Z Adding debian:Certum_EC-384_CA.pem
+2026-09-14T05:23:09.8000766Z Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+2026-09-14T05:23:09.8043103Z Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
+2026-09-14T05:23:09.8059433Z Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+2026-09-14T05:23:09.8106850Z Adding debian:UCA_Global_G2_Root.pem
+2026-09-14T05:23:09.8129572Z Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+2026-09-14T05:23:09.8157804Z Adding debian:Actalis_Authentication_Root_CA.pem
+2026-09-14T05:23:09.8198575Z Adding debian:GlobalSign_Root_CA_-_R6.pem
+2026-09-14T05:23:09.8227837Z Adding debian:Amazon_Root_CA_2.pem
+2026-09-14T05:23:09.8251603Z Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+2026-09-14T05:23:09.8264298Z Adding debian:e-Szigno_Root_CA_2017.pem
+2026-09-14T05:23:09.8287444Z Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+2026-09-14T05:23:09.8326838Z Adding debian:Entrust_Root_Certification_Authority.pem
+2026-09-14T05:23:09.8362034Z Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T05:23:09.8377447Z Adding debian:Amazon_Root_CA_1.pem
+2026-09-14T05:23:09.8413830Z Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+2026-09-14T05:23:09.8451700Z Adding debian:TunTrust_Root_CA.pem
+2026-09-14T05:23:09.8479080Z Adding debian:Certainly_Root_R1.pem
+2026-09-14T05:23:09.8503075Z Adding debian:Certainly_Root_E1.pem
+2026-09-14T05:23:09.8532101Z Adding debian:GlobalSign_Root_CA_-_R3.pem
+2026-09-14T05:23:09.8568396Z Adding debian:Certigna_Root_CA.pem
+2026-09-14T05:23:09.8614458Z Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+2026-09-14T05:23:09.8648055Z Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+2026-09-14T05:23:09.8674932Z Adding debian:Atos_TrustedRoot_2011.pem
+2026-09-14T05:23:09.8698876Z Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+2026-09-14T05:23:09.8741128Z Adding debian:vTrus_Root_CA.pem
+2026-09-14T05:23:09.8756337Z Adding debian:Security_Communication_ECC_RootCA1.pem
+2026-09-14T05:23:09.8781951Z Adding debian:SwissSign_RSA_TLS_Root_CA_2022_-_1.pem
+2026-09-14T05:23:09.8820225Z Adding debian:OISTE_Server_Root_RSA_G1.pem
+2026-09-14T05:23:09.8842026Z Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+2026-09-14T05:23:09.8864897Z Adding debian:Security_Communication_RootCA2.pem
+2026-09-14T05:23:09.8895054Z Adding debian:TWCA_CYBER_Root_CA.pem
+2026-09-14T05:23:09.8920732Z Adding debian:TrustAsia_Global_Root_CA_G4.pem
+2026-09-14T05:23:09.8942949Z Adding debian:Telia_Root_CA_v2.pem
+2026-09-14T05:23:09.8965638Z Adding debian:SZAFIR_ROOT_CA2.pem
+2026-09-14T05:23:09.8984310Z Adding debian:GlobalSign_Root_E46.pem
+2026-09-14T05:23:09.9016676Z Adding debian:Buypass_Class_2_Root_CA.pem
+2026-09-14T05:23:09.9035490Z Adding debian:DigiCert_Global_Root_G3.pem
+2026-09-14T05:23:09.9075114Z Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-09-14T05:23:09.9110229Z Adding debian:CA_Disig_Root_R2.pem
+2026-09-14T05:23:09.9136730Z Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+2026-09-14T05:23:09.9162446Z Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+2026-09-14T05:23:09.9189086Z Adding debian:QuoVadis_Root_CA_1_G3.pem
+2026-09-14T05:23:09.9207140Z Adding debian:SecureSign_Root_CA15.pem
+2026-09-14T05:23:09.9241757Z Adding debian:e-Szigno_TLS_Root_CA_2023.pem
+2026-09-14T05:23:09.9284852Z Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+2026-09-14T05:23:09.9307567Z Adding debian:AC_RAIZ_FNMT-RCM.pem
+2026-09-14T05:23:09.9325021Z Adding debian:DigiCert_Assured_ID_Root_G3.pem
+2026-09-14T05:23:09.9346898Z Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+2026-09-14T05:23:09.9380312Z Adding debian:QuoVadis_Root_CA_2_G3.pem
+2026-09-14T05:23:09.9418804Z Adding debian:TWCA_Global_Root_CA.pem
+2026-09-14T05:23:09.9473501Z Adding debian:USERTrust_RSA_Certification_Authority.pem
+2026-09-14T05:23:09.9494639Z Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+2026-09-14T05:23:09.9520853Z Adding debian:TrustAsia_TLS_RSA_Root_CA.pem
+2026-09-14T05:23:09.9552112Z Adding debian:SecureSign_Root_CA14.pem
+2026-09-14T05:23:09.9573391Z Adding debian:OISTE_Server_Root_ECC_G1.pem
+2026-09-14T05:23:09.9603540Z Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+2026-09-14T05:23:09.9622759Z Adding debian:ISRG_Root_X2.pem
+2026-09-14T05:23:09.9644869Z Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+2026-09-14T05:23:09.9664566Z Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+2026-09-14T05:23:09.9697761Z Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+2026-09-14T05:23:09.9744471Z Adding debian:TrustAsia_Global_Root_CA_G3.pem
+2026-09-14T05:23:09.9763346Z Adding debian:GTS_Root_R4.pem
+2026-09-14T05:23:09.9789741Z Adding debian:CFCA_EV_ROOT.pem
+2026-09-14T05:23:09.9802321Z Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+2026-09-14T05:23:09.9813039Z Adding debian:Amazon_Root_CA_3.pem
+2026-09-14T05:23:09.9836301Z Adding debian:HiPKI_Root_CA_-_G1.pem
+2026-09-14T05:23:09.9859856Z Adding debian:NAVER_Global_Root_Certification_Authority.pem
+2026-09-14T05:23:09.9872059Z Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+2026-09-14T05:23:09.9894534Z Adding debian:GlobalSign_Root_R46.pem
+2026-09-14T05:23:09.9923412Z Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
+2026-09-14T05:23:09.9942637Z Adding debian:Certum_Trusted_Root_CA.pem
+2026-09-14T05:23:09.9959654Z Adding debian:Certum_Trusted_Network_CA.pem
+2026-09-14T05:23:10.0281849Z done.
+2026-09-14T05:23:10.0335363Z Setting up libtinfo5:amd64 (6.3-2ubuntu0.3) ...
+2026-09-14T05:23:10.0357204Z Setting up libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+2026-09-14T05:23:10.0378536Z Setting up cmake (3.22.1-1ubuntu1.22.04.2) ...
+2026-09-14T05:23:10.0412705Z Setting up openjdk-17-jre-headless:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:10.1199889Z Setting up openjdk-17-jre:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:10.1263539Z Setting up openjdk-17-jdk-headless:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:10.2740346Z Setting up openjdk-17-jdk:amd64 (17.0.20+8-1~22.04) ...
+2026-09-14T05:23:10.2871582Z Processing triggers for ca-certificates (20260601~22.04.1) ...
+2026-09-14T05:23:10.2929877Z Updating certificates in /etc/ssl/certs...
+2026-09-14T05:23:10.8375380Z 0 added, 0 removed; done.
+2026-09-14T05:23:10.8375975Z Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T05:23:10.9125962Z /etc/ssl/certs/adoptium/cacerts successfully populated.
+2026-09-14T05:23:10.9151342Z 
+2026-09-14T05:23:11.1335291Z done.
+2026-09-14T05:23:11.1521559Z Updating Mono key store
+2026-09-14T05:23:11.1772092Z Mono Certificate Store Sync - version 6.12.0.200
+2026-09-14T05:23:11.1772911Z Populate Mono certificate store from a concatenated list of certificates.
+2026-09-14T05:23:11.1773800Z Copyright 2002, 2003 Motus Technologies. Copyright 2004-2008 Novell. BSD licensed.
+2026-09-14T05:23:11.1774128Z 
+2026-09-14T05:23:11.2213530Z Importing into legacy system store:
+2026-09-14T05:23:11.3960546Z I already trust 121, your new list has 121
+2026-09-14T05:23:11.4019762Z Import process completed.
+2026-09-14T05:23:11.4035626Z 
+2026-09-14T05:23:11.4035801Z Importing into BTLS system store:
+2026-09-14T05:23:11.5757560Z I already trust 121, your new list has 121
+2026-09-14T05:23:11.5783266Z Import process completed.
+2026-09-14T05:23:11.5941975Z Done
+2026-09-14T05:23:11.5944745Z done.
+2026-09-14T05:23:11.5997731Z Processing triggers for mailcap (3.70+nmu1ubuntu1.22.04.1) ...
+2026-09-14T05:23:11.7022065Z Processing triggers for hicolor-icon-theme (0.17-2) ...
+2026-09-14T05:23:11.9227888Z Processing triggers for libc-bin (2.35-0ubuntu3.14) ...
+2026-09-14T05:23:12.0325798Z Processing triggers for man-db (2.10.2-1) ...
+2026-09-14T05:23:12.0351599Z Not building database; man-db/auto-update is not 'true'.
+2026-09-14T05:23:13.3078149Z 
+2026-09-14T05:23:13.3078925Z Running kernel seems to be up-to-date.
+2026-09-14T05:23:13.3079406Z 
+2026-09-14T05:23:13.3079632Z No services need to be restarted.
+2026-09-14T05:23:13.3079996Z 
+2026-09-14T05:23:13.3080210Z No containers need to be restarted.
+2026-09-14T05:23:13.3080598Z 
+2026-09-14T05:23:13.3080850Z No user sessions are running outdated binaries.
+2026-09-14T05:23:13.3081541Z 
+2026-09-14T05:23:13.3081967Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
