@@ -27,13 +27,34 @@ jobs:
           pip install Cython==0.29.33
           pip install git+https://github.com/kivy/buildozer.git@master
 
-      - name: Accept Android SDK licenses
+      - name: Setup Android SDK Command-line Tools properly
         run: |
-          mkdir -p ~/.buildozer/android/platform/android-sdk
-          yes | sdkmanager --licenses || true
-          if [ -d "$HOME/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin" ]; then
-            yes | $HOME/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
-          fi
+          SDK_DIR="$HOME/.buildozer/android/platform/android-sdk"
+          mkdir -p "$SDK_DIR/cmdline-tools"
+          cd "$SDK_DIR/cmdline-tools"
+          curl -o commandlinetools.zip https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          unzip -q commandlinetools.zip
+          mv cmdline-tools latest
+          mkdir -p "$SDK_DIR/tools/bin"
+          ln -s "$SDK_DIR/cmdline-tools/latest/bin/sdkmanager" "$SDK_DIR/tools/bin/sdkmanager"
+          yes | "$SDK_DIR/cmdline-tools/latest/bin/sdkmanager" --licenses || true
+
+      - name: Build APK
+        run: buildozer -v android debug
+
+      - name: List generated files (debug)
+        if: always()
+        run: |
+          echo "=== Contenu de bin/ ==="
+          find . -name '*.apk' -o -name 'bin' -type d
+          ls -la bin/ 2>/dev/null || echo "Pas de dossier bin/"
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ps2toolmilos-apk
+          path: bin/*.apk
+          if-no-files-found: warn
 
       - name: Build APK
         run: buildozer -v android debug
