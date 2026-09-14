@@ -26,6 +26,12 @@ jobs:
           pip install --upgrade pip
           pip install Cython==0.29.33 buildozer
 
+      - name: Accept Android SDK licenses
+        run: |
+          mkdir -p ~/.android
+          touch ~/.android/repositories.cfg
+          yes | sdkmanager --licenses || true
+
       - name: Clean old buildozer cache
         run: buildozer android clean || true
 
@@ -45,4 +51,3 @@ jobs:
           name: ps2toolmilos-apk
           path: bin/*.apk
           if-no-files-found: warn
-
